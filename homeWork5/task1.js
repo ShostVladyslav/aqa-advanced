@@ -19,4 +19,4 @@ const calculateAreaRectangle3 = (width, height) => {
     const areaRectangle = width * height
     return areaRectangle
 }
-console.log('arrow function expression area Rectangle:', calculateAreaRectangle3(5, 10))
+console.log('arrow function expression area Rectangle:', calculateAreaRectangle3(5, 10))    
