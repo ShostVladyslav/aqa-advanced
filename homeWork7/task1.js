@@ -11,7 +11,7 @@ let zeroCount = 0
 for (const number of numbers ){
     if (number > 0) {positiveCount ++; continue}
     if (number < 0) {negativeCount ++; continue}
-    {zeroCount ++}
+    zeroCount ++
 }
 
 console.log('Number of positive numbers:', positiveCount)
