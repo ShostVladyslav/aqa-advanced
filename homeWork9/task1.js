@@ -12,10 +12,10 @@ console.log("------------------")
 book3.printInfo()
 console.log("------------------")
 
-const oldestBook = Book.oldBook([book1, book2, book3]);
+const oldestBook = Book.findOldestBook([book1, book2, book3]);
 console.log("The oldest book - ", oldestBook._title); 
 
 console.log("------------------")
 
-const addFormatfile = EBook.bookAddFileFormat(book2, 'TXT')
-addFormatfile.printInfo(console.log('The book with file format from Book class :'))
+const book2ForEbook = EBook.fromBookAndFormat(book2, 'TXT')
+book2ForEbook.printInfo(console.log('The book with file format from Book class :'))

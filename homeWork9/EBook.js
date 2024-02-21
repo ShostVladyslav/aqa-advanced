@@ -30,7 +30,7 @@ export default class EBook extends Book{
         this._fileFormat = value
     }
 
-    static bookAddFileFormat(book, fileFormat){
+    static fromBookAndFormat(book, fileFormat){
         return new EBook(book.title, book.author, book.yearOfPublication, fileFormat)
     }
 

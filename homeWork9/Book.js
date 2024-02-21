@@ -72,9 +72,10 @@ export default class Book {
 
     }
 
-    static oldBook(books){
-        books.sort((book1, book2) => book1.yearOfPublication - book2.yearOfPublication);
-        return books[0]
+    static findOldestBook(books){
+        const newBooks = books.slice()
+        newBooks.sort((book1, book2) => book1.yearOfPublication - book2.yearOfPublication);
+        return newBooks[0]
     }
 
     printInfo(){console.log(
@@ -83,4 +84,3 @@ export default class Book {
         Year of publication - '${this._yearOfPublication}'`)
     }
 }
-
